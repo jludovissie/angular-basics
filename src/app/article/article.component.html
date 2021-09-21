@@ -1,0 +1,11 @@
+<h1 [ngStyle]="{backgroundColor: isTechRelated ? 'green' : 'yellow'}"> My name is {{nameId}} and I am taking a course through {{courseId}} </h1>
+<button (click)="toggleTechRelated()"> Change is TechRelated</button>
+<p *ngIf="isTechRelated else noTech "> Tech Related</p>
+<ng-template #noTech>
+  <p> Not Tech Related</p>
+</ng-template>
+
+
+
+<p>I am from Paducah and I am {{ageId}} years old </p>
+
